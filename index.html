@@ -13,13 +13,209 @@
 </head>
 <body>
 <header>
-    <nav class="navbar">
+    <div class="container">
+    <nav class="navbar d-flex">
+        <a class="navbar-brand mr-auto" href="index.html"><img src="img/logo.svg" alt="logo"></a>
+        <p class="user_name" id="user-name">Здравствуйте, </p>
+        <button type="button" class="btn button-enter">Войти</button>
+        <button type="button" class="btn button-exit">Выйти</button>
+        <div class="basket"><a href=""><img src="img/basket.svg" alt="basket"></a> </div>
     </nav>
+    </div>
+    <div class="registration-form">
+        <form id="login-form">
+            <div class="mb-3">
+                <label for="input-name" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="input-name" aria-describedby="NameHelp">
+                <div id="NameHelp" class="form-text">Имя должно содержать только буквы, цифры и символ "-".</div>
+            </div>
+            <div class="mb-3">
+                <label for="input-password" class="form-label">Пароль</label>
+                <input type="text" class="form-control" id="input-password" aria-describedby="ParrolHelp">
+                <div id="ParrolHelp" class="form-text">Пароль должен содежать не менее 5 символов.</div>
+            </div>
+           <button type="submit" class="btn button-enter">Войти</button>
+        </form>
+    </div>
 </header>
 <main>
+<div class="container">
+    <form class="form-search">
+        <input type="search" id="form1" class="form-control" placeholder="Поиск по ресторанам и кухням" aria-label="Search">
+    </form>
 
+    <div class="row">
+        <h2>Рестораны с Москве</h2>
+    </div>
+
+    <div class="row cards">
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="img/stores/mac.jpg" class="card-img-top" alt="Макдоналдс">
+                <div class="card-body">
+                    <h5 class="card-title">Макдоналдс - Газетный</h5>
+                    <p class="card-text">Бургеры</p>
+                    <p class="card-text">25-35 мин</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="img/stores/mac.jpg" class="card-img-top" alt="Макдоналдс">
+                <div class="card-body">
+                    <h5 class="card-title">Макдоналдс - Газетный</h5>
+                    <p class="card-text">Бургеры</p>
+                    <p class="card-text">25-35 мин</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="img/stores/mac.jpg" class="card-img-top" alt="Макдоналдс">
+                <div class="card-body">
+                    <h5 class="card-title">Макдоналдс - Газетный</h5>
+                    <p class="card-text">Бургеры</p>
+                    <p class="card-text">25-35 мин</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row cards">
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="img/stores/mac.jpg" class="card-img-top" alt="Макдоналдс">
+                <div class="card-body">
+                    <h5 class="card-title">Макдоналдс - Газетный</h5>
+                    <p class="card-text">Бургеры</p>
+                    <p class="card-text">25-35 мин</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="img/stores/mac.jpg" class="card-img-top" alt="Макдоналдс">
+                <div class="card-body">
+                    <h5 class="card-title">Макдоналдс - Газетный</h5>
+                    <p class="card-text">Бургеры</p>
+                    <p class="card-text">25-35 мин</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="img/stores/mac.jpg" class="card-img-top" alt="Макдоналдс">
+                <div class="card-body">
+                    <h5 class="card-title">Макдоналдс - Газетный</h5>
+                    <p class="card-text">Бургеры</p>
+                    <p class="card-text">25-35 мин</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row cards">
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="img/stores/mac.jpg" class="card-img-top" alt="Макдоналдс">
+                <div class="card-body">
+                    <h5 class="card-title">Макдоналдс - Газетный</h5>
+                    <p class="card-text">Бургеры</p>
+                    <p class="card-text">25-35 мин</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="img/stores/mac.jpg" class="card-img-top" alt="Макдоналдс">
+                <div class="card-body">
+                    <h5 class="card-title">Макдоналдс - Газетный</h5>
+                    <p class="card-text">Бургеры</p>
+                    <p class="card-text">25-35 мин</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="img/stores/mac.jpg" class="card-img-top" alt="Макдоналдс">
+                <div class="card-body">
+                    <h5 class="card-title">Макдоналдс - Газетный</h5>
+                    <p class="card-text">Бургеры</p>
+                    <p class="card-text">25-35 мин</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 </main>
 <footer>
+    <div class="container">
+        <div class="row footer-logo">
+            <div class="big-logo"><img src="img/logo.svg" alt = "logo"></div>
+        </div>
+
+        <div class="row footer-line">
+            <div class="col-12 line"></div>
+        </div>
+
+        <div class="row information">
+        <div class="col-lg-4">
+            <form class="custom-select" action="" method="post">
+                <select id="language" name="language">
+                    <option>Русский</option>
+                    <option>Английский</option>
+                </select>
+            </form>
+            <p>#UberEats</p>
+            <div class="mass-media">
+                <a href=""><img src="img/stores/facebook.png" alt="facebook"></a>
+                <a href=""><img src="img/stores/Shape.svg" alt = "twitter"></a>
+                <a href=""><img src="img/stores/instagram.png" alt = "instagram"></a>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <a href="#"><p>Об UberEats</p></a>
+            <a href="#"><p>Станьте партнером по доставке</p></a>
+            <a href="#"><p>Станьте партнером-рестораном</p></a>
+        </div>
+        <div class="col-lg-4">
+                <a href="#"><p>Все города</p></a>
+                <a href="#"><p>Цены</p></a>
+                <a href="#"><p>Помощь</p></a>
+                <a href="#"><p>FAQs</p></a>
+            </div>
+    </div>
+
+        <div class="row footer-line">
+            <div class="col-12 line"></div>
+        </div>
+
+        <div class="row stores">
+        <a href="#"><img src="img/stores/appstore.png" alt="apple-store"></a>
+        <a href="#"><img src="img/stores/google.png" alt="google-store"></a>
+    </div>
+
+        <div class="row footer-line">
+        <div class="col-12 line"></div>
+    </div>
+
+        <div class="row information-2">
+            <div class="col-lg-4">
+            <a href=""><p>2017 Uber Technologies Inc.</p></a>
+        </div>
+            <div class="col-lg-4">
+            <a href=""><p>Обработка персональных данных</p></a>
+        </div>
+            <div class="col-lg-4">
+            <a href=""><p>Пользовательское соглашение</p></a>
+        </div>
+        </div>
+
+
+    </div>
 </footer>
 </body>
 </html>

@@ -1,0 +1,18 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.user_name, .button-exit, .registration-form{
+    display: none;
+}
+
+#form1{
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+footer{
+    background-color: #262626;
+}
