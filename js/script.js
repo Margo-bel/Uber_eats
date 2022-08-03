@@ -5,6 +5,11 @@ const userName = document.getElementById('user-name');
 const inputName = document.getElementById('input-name');
 const inputPassword = document.getElementById('input-password');
 const loginForm = document.getElementById('login-form');
+const overlay = document.querySelector('.overlay');
+const closeBtn = document.querySelector('.close-btn');
+
+
+
 
 console.log(userName);
 console.log(inputName)
@@ -19,14 +24,15 @@ const login = (user) => {
         alert("Введите пароль");
     } else {*/
         buttonEnter.style.display = 'none';
-        buttonExit.style.display = 'flex';
-        userName.style.display = 'flex';
+        buttonExit.style.display = 'block';
+        userName.style.display = 'block';
         userName.textContent += user.login;
         registrationForm.style.display = 'none';
+        overlay.style.display = 'none';
     }
 
     const logout = () => {
-        buttonEnter.style.display = 'flex';
+        buttonEnter.style.display = 'block';
         buttonExit.style.display = 'none';
         userName.style.display = 'none';
         userName.textContent = 'Здравствуйте, ';
@@ -36,10 +42,19 @@ const login = (user) => {
 
     buttonEnter.addEventListener('click', () => {
             registrationForm.style.display = 'flex';
+            overlay.style.display = 'block';
+
             })
     buttonExit.addEventListener('click', () => {
             registrationForm.style.display = 'none';
             })
+
+closeBtn.addEventListener('click', () => {
+    registrationForm.style.display = 'none';
+    overlay.style.display = 'none';
+})
+
+
 
 loginForm.addEventListener('submit', (event) => {
     event.preventDefault();

@@ -2,7 +2,27 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+.main-header{
+    height: 72px;
+    padding: 0;
+}
 
+.navbar{
+    padding: 0;
+}
+
+.button-enter, .button-exit{
+    width: 78px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    color: #1D1D1D;
+    background-color: white;
+    border-color: #E0E0E0;
+    border-radius: 0;
+    margin-right: 21px;
+}
 
 .user_name, .button-exit, .registration-form{
     display: none;
@@ -13,6 +33,67 @@ body{
     border-bottom: 1px solid #757575;
 }
 
+header{
+    position: relative;
+}
+
+.registration-form{
+    top: 10rem;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-right: 0;
+}
+
+#login-form{
+    margin: 0 auto;
+}
+
+#login-form label{
+    font-size: 24px;
+}
+/*Создание затемнения*/
+.overlay{
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    display: none;
+}
+
+.close-btn img{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+}
+
 footer{
     background-color: #262626;
+}
+
+@media screen and (max-width:992px) {
+    .navbar-brand img{
+        width: 107px;
+    }
+}
+
+@media screen and (max-width:576px) {
+.basket{
+    display: none;
+    }
+    .navbar{
+        height: 72px;
+    }
+    .btn{
+        margin-right: 0.5rem;
+    }
+
 }
