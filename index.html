@@ -10,29 +10,6 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
     <script src="js/script.js" defer></script>
-
-    <style>
-        HTML {
-            background-repeat: no-repeat;
-            background-position:  50% 0;
-            /* Mobile layout by default */
-            background-image: url( "source/Mobile.png" );
-        }
-        /* Tablet */
-        @media ( min-width: 760px ) {
-            HTML {
-                /* Tablet layout */
-                background-image: url( "source/Tablet.png" );
-            }
-        }
-        /* Desktop */
-        @media ( min-width: 960px ) {
-            HTML {
-                /* Desktop layout */
-                background-image: url( "source/Desktop.jpg" );
-            }
-        }
-    </style>
     <link href="source/node_modules/pixel-glass/styles.css" rel="stylesheet">
     <script src="source/node_modules/pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
@@ -46,12 +23,10 @@
 <body>
 
 <!--Кнопка прокрутки вверх-->
-<button
-        type="button"
+<button type="button"
         class="btn btn-floating btn-lg"
-        id="btn-back-to-top"
->
-    <img src="img/stores/arrow.svg">
+        id="btn-back-to-top">
+    <img src="img/stores/arrow.svg" alt="arrow">
 </button>
 
 <!--Затемнение фона при выводе окна регистрации-->
