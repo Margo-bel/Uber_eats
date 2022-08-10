@@ -220,6 +220,92 @@ select{
     background-color: #59BD5A;
 }
 
+.restaurant-header{
+    height: auto;
+    background-image: url("../img/Restaurant/head.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.restaurant-card{
+    width: 389px;
+    height: 204px;
+    background-color: white;
+    margin: 80px 0;
+    padding: 38px;
+}
+
+.horizontal-card-text{
+    margin: 16px;
+}
+
+.restaurant-card h1{
+    font-size: 36px;
+}
+
+.restaurant-info .cousins{
+    font-size: 14px;
+    line-height: 17px;
+    color: #626262;
+}
+.restaurant-info .time{
+    width: 100px;
+    height: 32px;
+    background-color: #262626;
+    color: white;
+    border-radius: 16px;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.restaurant-info {
+    margin-top: 54px;
+}
+
+.cousins-list{
+    height: 84px;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.cousins-list li:not(:last-of-type){
+    margin-right: 40px;
+}
+.cousins-list ul, h3{
+    padding-left: 0;
+}
+
+
+.cousins-list li{
+    list-style-type: none;
+}
+
+.cousins-list a{
+    color: #626262;
+    font-size: 16px;
+}
+
+.cousins-list a:hover{
+    color: #327430;
+}
+
+.horizontal-card{
+    border: 2px solid #F2F2F2;
+    margin-bottom: 49px;
+}
+
+.horizontal-card:hover{
+    background-color: #F2F2F2;
+}
+
+
+.price{
+    margin-bottom: 0;
+}
+
+h3{
+    margin-bottom: 32px;
+}
 
 
 @media screen and (max-width:992px) {
@@ -231,7 +317,29 @@ select{
         background-color: #3B3B3B;
         width: 176px;
     }
+
+    .restaurant-header{
+        height: 364px;
+        background-image: url("../img/Restaurant/head-md.png");
+    }
+
+    .restaurant-card h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .main-container{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .horizontal-card{
+        margin-bottom: 32px;
+    }
+
+
 }
+
 
 @media screen and (max-width:576px) {
 .basket{
@@ -257,4 +365,58 @@ select{
         width: 124px;
     }
 
+    .restaurant-header{
+        height: 204px;
+        background-image: url("../img/Restaurant/head-sm.png");
+    }
+
+    .restaurant-card h1{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .restaurant-info{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .restaurant-info .time{
+        margin-top: 16px;
+    }
+
+    .cousins-list{
+        display: none;
+    }
+
+    .restaurant-card{
+        padding-top: 24px;
+        height: 180px;
+    }
+    .restaurant-info {
+        margin-top: 35px;
+    }
+
+    .restaurant-header{
+        height: 100%;
+    }
+
+    h3{
+        margin: 56px auto;
+    }
+
+    h3::after {
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 1px;
+        background-color: #757575;
+        right: 0;
+        margin: 10px auto 0 auto;
+        display: block;
+    }
+
+    .horizontal-card{
+        margin-bottom: 16px;
+    }
 }
